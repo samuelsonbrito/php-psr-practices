@@ -11,9 +11,10 @@ use Tambaqui\MyException;
 
 try{
 
-    $age = (new Person)->setAge(16);
+    $person = new Person;
+    $person->name = 'Ronaldo';
 
-    echo $age;
+    var_dump($person->name);
 
 }catch(MyException $e){
 
